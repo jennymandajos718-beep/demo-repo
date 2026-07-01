@@ -1,0 +1,8 @@
+Options -Indexes
+RewriteEngine On
+
+# Route /api/* requests to ../api/* (one level up from public/)
+RewriteRule ^api/(.*)$ ../api/$1 [L]
+
+# Route /data/* requests to ../data/*
+RewriteRule ^data/(.*)$ ../data/$1 [L]
